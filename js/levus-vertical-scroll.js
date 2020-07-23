@@ -51,9 +51,8 @@ function move() {
 
         item.style.transform = `translateY(${sizes[i] * 60}px)`;
 
-        if (sizes[i] === 0) zIndex = 3;
-        else if (sizes[i] === -1 || sizes[i] === 1) zIndex = 2;
-        else zIndex = 0;
+        if (sizes[i] < -1 || sizes[i] > 14) zIndex = 1;
+        else zIndex = 3;
 
         item.style.zIndex = zIndex;
     });
@@ -63,8 +62,7 @@ const up = document.querySelector(toUp);
 const down = document.querySelector(toDown);
 
 // показуємо кнопки
-up.style.display =
-    down.style.display = 'block';
+up.style.display = down.style.display = 'block';
 
 up.addEventListener('click', () => {
     const first = sizes.pop();
