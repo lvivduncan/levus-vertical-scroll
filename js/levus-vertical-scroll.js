@@ -1,8 +1,5 @@
 const scroll = document.querySelector('.levus-vertical-scroll ul');
 
-// отримуємо список елементів
-let elements = scroll.querySelectorAll('.levus-vertical-scroll li');
-
 const up = document.querySelector('.levus-vertical-scroll .up');
 const down = document.querySelector('.levus-vertical-scroll .down');
 
