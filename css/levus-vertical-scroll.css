@@ -16,6 +16,7 @@
 /* ховаємо, покажемо, якщо підключений джаваскрипт */
 
 .levus-vertical-scroll .up {
+    display: none;
     position: absolute;
     top: 13px;
     right: 10px;
@@ -26,13 +27,24 @@
 }
 
 
+/* oбгортка для ul */
+
+.levus-vertical-scroll-wrapper {
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+
 /* 15 elements */
 
 .levus-vertical-scroll ul {
-    height: 900px;
+    /* height: 900px; */
     display: block;
     overflow: hidden;
     position: relative;
+    /* -webkit-transition: all .5s;
+    transition: all .5s; */
 }
 
 .levus-vertical-scroll li {
@@ -40,8 +52,8 @@
     height: 60px;
     width: 100%;
     background: white;
-    -webkit-transition: transform .5s;
-    transition: transform .5s;
+    /* -webkit-transition: all .5s;
+    transition: all .5s; */
     overflow: hidden;
 }
 
@@ -82,6 +94,7 @@
 /* ховаємо, покажемо, якщо підключений джаваскрипт */
 
 .levus-vertical-scroll .down {
+    display: none;
     position: absolute;
     top: 13px;
     right: 10px;
